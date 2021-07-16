@@ -1,14 +1,15 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>net5.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <AssemblyName>RibbonDemo</AssemblyName>
     <RootNamespace>RibbonDemo</RootNamespace>
     <Authors>RibbonWinForms</Authors>
     <AssemblyVersion>3.5.2.0</AssemblyVersion>
     <FileVersion>3.5.2.0</FileVersion>
+    <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -27,6 +28,16 @@
   <ItemGroup>
     <EmbeddedResource Remove="QiosCaptionTest.resx" />
   </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DotNet.ILCompiler" Version="6.0.0-*" />
+    <PackageReference Include="WinFormsComInterop" Version="0.2.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <RdXmlFile Include="rd.xml" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <None Remove="app.config" />

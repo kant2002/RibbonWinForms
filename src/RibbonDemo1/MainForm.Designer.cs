@@ -80,6 +80,8 @@ namespace RibbonDemo
             this.ribbonPanel2 = new System.Windows.Forms.RibbonPanel();
             this.ribbonItemGroup1 = new System.Windows.Forms.RibbonItemGroup();
             this.ribbonComboBox1 = new System.Windows.Forms.RibbonComboBox();
+            this.ribbonLabel1 = new System.Windows.Forms.RibbonLabel();
+            this.ribbonLabel2 = new System.Windows.Forms.RibbonLabel();
             this.ribbonComboBox2 = new System.Windows.Forms.RibbonComboBox();
             this.ribbonItemGroup2 = new System.Windows.Forms.RibbonItemGroup();
             this.ribbonButton8 = new System.Windows.Forms.RibbonButton();
@@ -155,22 +157,21 @@ namespace RibbonDemo
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ribbonLabel1 = new System.Windows.Forms.RibbonLabel();
-            this.ribbonLabel2 = new System.Windows.Forms.RibbonLabel();
             this.panelMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbon1
             // 
             this.ribbon1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ribbon1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ribbon1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ribbon1.Location = new System.Drawing.Point(0, 0);
+            this.ribbon1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ribbon1.Minimized = false;
             this.ribbon1.Name = "ribbon1";
             // 
             // 
             // 
-            this.ribbon1.OrbDropDown.BorderRoundness = 8;
+            this.ribbon1.OrbDropDown.BorderRoundness = 2;
             this.ribbon1.OrbDropDown.Location = new System.Drawing.Point(0, 0);
             this.ribbon1.OrbDropDown.MenuItems.Add(this.ribbonOrbMenuItem1);
             this.ribbon1.OrbDropDown.MenuItems.Add(this.ribbonOrbMenuItem2);
@@ -204,8 +205,8 @@ namespace RibbonDemo
             this.ribbon1.QuickAccessToolbar.Items.Add(this.ribbonButton43);
             this.ribbon1.QuickAccessToolbar.Items.Add(this.ribbonButton44);
             this.ribbon1.QuickAccessToolbar.Items.Add(this.ribbonButton45);
-            this.ribbon1.RibbonTabFont = new System.Drawing.Font("Trebuchet MS", 9F);
-            this.ribbon1.Size = new System.Drawing.Size(928, 150);
+            this.ribbon1.RibbonTabFont = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ribbon1.Size = new System.Drawing.Size(1083, 173);
             this.ribbon1.TabIndex = 0;
             this.ribbon1.Tabs.Add(this.ribbonTab1);
             this.ribbon1.Tabs.Add(this.ribbonTab2);
@@ -256,11 +257,6 @@ namespace RibbonDemo
             this.ribbonOrbMenuItem4.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem4.SmallImage")));
             this.ribbonOrbMenuItem4.Style = System.Windows.Forms.RibbonButtonStyle.SplitDropDown;
             this.ribbonOrbMenuItem4.Text = "Save as";
-            // 
-            // ribbonSeparator6
-            // 
-            this.ribbonSeparator6.Name = "ribbonSeparator6";
-            this.ribbonSeparator6.Text = "Save a copy of the document";
             // 
             // ribbonDescriptionMenuItem1
             // 
@@ -317,10 +313,6 @@ namespace RibbonDemo
             this.ribbonDescriptionMenuItem5.SmallImage = global::RibbonDemo.Properties.Resources.saveas321;
             this.ribbonDescriptionMenuItem5.Text = "Other Formats";
             // 
-            // ribbonSeparator3
-            // 
-            this.ribbonSeparator3.Name = "ribbonSeparator3";
-            // 
             // ribbonOrbMenuItem5
             // 
             this.ribbonOrbMenuItem5.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left;
@@ -334,11 +326,6 @@ namespace RibbonDemo
             this.ribbonOrbMenuItem5.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem5.SmallImage")));
             this.ribbonOrbMenuItem5.Style = System.Windows.Forms.RibbonButtonStyle.SplitDropDown;
             this.ribbonOrbMenuItem5.Text = "Print";
-            // 
-            // ribbonSeparator5
-            // 
-            this.ribbonSeparator5.Name = "ribbonSeparator5";
-            this.ribbonSeparator5.Text = "Preview and print the document";
             // 
             // ribbonDescriptionMenuItem6
             // 
@@ -399,10 +386,6 @@ namespace RibbonDemo
             this.ribbonOrbMenuItem8.Name = "ribbonOrbMenuItem8";
             this.ribbonOrbMenuItem8.SmallImage = global::RibbonDemo.Properties.Resources.publish32;
             this.ribbonOrbMenuItem8.Text = "Publish";
-            // 
-            // ribbonSeparator4
-            // 
-            this.ribbonSeparator4.Name = "ribbonSeparator4";
             // 
             // ribbonOrbMenuItem9
             // 
@@ -596,10 +579,6 @@ namespace RibbonDemo
             this.ribbonButton4.SmallImage = global::RibbonDemo.Properties.Resources.pastelink16;
             this.ribbonButton4.Text = "Paste as link";
             // 
-            // ribbonSeparator7
-            // 
-            this.ribbonSeparator7.Name = "ribbonSeparator7";
-            // 
             // ribbonButton5
             // 
             this.ribbonButton5.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton5.Image")));
@@ -658,6 +637,16 @@ namespace RibbonDemo
             this.ribbonComboBox1.Text = "ribbonComboBox1";
             this.ribbonComboBox1.TextBoxText = "Verdana";
             this.ribbonComboBox1.TextBoxWidth = 160;
+            // 
+            // ribbonLabel1
+            // 
+            this.ribbonLabel1.Name = "ribbonLabel1";
+            this.ribbonLabel1.Text = "Verdana";
+            // 
+            // ribbonLabel2
+            // 
+            this.ribbonLabel2.Name = "ribbonLabel2";
+            this.ribbonLabel2.Text = "Arial";
             // 
             // ribbonComboBox2
             // 
@@ -1122,10 +1111,6 @@ namespace RibbonDemo
             this.ribbonButton38.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton38.SmallImage")));
             this.ribbonButton38.Text = "Create new theme colors...";
             // 
-            // ribbonSeparator2
-            // 
-            this.ribbonSeparator2.Name = "ribbonSeparator2";
-            // 
             // ribbonButton41
             // 
             this.ribbonButton41.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left;
@@ -1143,10 +1128,6 @@ namespace RibbonDemo
             this.ribbonButton39.Name = "ribbonButton39";
             this.ribbonButton39.SmallImage = global::RibbonDemo.Properties.Resources.themefont;
             this.ribbonButton39.Text = "Fonts";
-            // 
-            // ribbonSeparator1
-            // 
-            this.ribbonSeparator1.Name = "ribbonSeparator1";
             // 
             // ribbonButton40
             // 
@@ -1282,19 +1263,21 @@ namespace RibbonDemo
             this.panelMain.Controls.Add(this.label2);
             this.panelMain.Controls.Add(this.label1);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(0, 150);
+            this.panelMain.Location = new System.Drawing.Point(0, 173);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(928, 114);
+            this.panelMain.Size = new System.Drawing.Size(1083, 132);
             this.panelMain.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(824, 16);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(980, 16);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 16);
+            this.label4.Size = new System.Drawing.Size(103, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Dock - RIGHT";
             // 
@@ -1302,10 +1285,11 @@ namespace RibbonDemo
             // 
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(94, 98);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(93, 116);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 16);
+            this.label3.Size = new System.Drawing.Size(120, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Dock - BOTTOM";
             // 
@@ -1313,10 +1297,11 @@ namespace RibbonDemo
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(0, 16);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 16);
+            this.label2.Size = new System.Drawing.Size(93, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Dock - LEFT";
             // 
@@ -1324,31 +1309,23 @@ namespace RibbonDemo
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 16);
+            this.label1.Size = new System.Drawing.Size(87, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Dock - TOP";
             // 
-            // ribbonLabel1
-            // 
-            this.ribbonLabel1.Name = "ribbonLabel1";
-            this.ribbonLabel1.Text = "Verdana";
-            // 
-            // ribbonLabel2
-            // 
-            this.ribbonLabel2.Name = "ribbonLabel2";
-            this.ribbonLabel2.Text = "Arial";
-            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(928, 264);
+            this.ClientSize = new System.Drawing.Size(1083, 305);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.ribbon1);
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "MainForm";
             this.Text = "Ribbon Demo Form";
             this.Load += new System.EventHandler(this.MainForm_Load);

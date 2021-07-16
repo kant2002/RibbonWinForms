@@ -11,7 +11,8 @@ namespace RibbonDemo
       [STAThread]
       private static void Main()
       {
-         Application.EnableVisualStyles();
+         //System.Runtime.InteropServices.ComWrappers.RegisterForMarshalling(WinFormsComInterop.WinFormsComWrappers.Instance);
+        Application.EnableVisualStyles();
          Application.SetCompatibleTextRenderingDefault(false);
          //Application.Run(new BlackForm());
          //Application.Run(new MainForm());
